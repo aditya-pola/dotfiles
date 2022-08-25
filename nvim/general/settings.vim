@@ -12,7 +12,7 @@ set fileencoding=utf-8                  " The encoding written to file
 set ruler              			" Show the cursor position all the time
 set cmdheight=1                         " More space for displaying messages
 set iskeyword+=-                      	" treat dash separated words as a word text object"
-"set mouse=a                             " Enable your mouse
+set mouse=a                             " Enable your mouse
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
 set t_Co=256                            " Support 256 colors
@@ -28,7 +28,7 @@ set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=0                        " Always display the status line
 set number relativenumber               " Line numbers
-"set cursorline                          " Enable highlighting of the current line
+set cursorline                          " Enable highlighting of the current line
 set showtabline=2                       " Always show tabs
 "set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set nobackup                            " This is recommended by coc
@@ -47,3 +47,6 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 "cmap w!! w !sudo tee %
 set t_ut=
 set ttyfast
+
+" Prevent newline to continue making comments
+set fo-=r fo -=o

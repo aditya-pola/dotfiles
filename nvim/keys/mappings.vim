@@ -1,7 +1,8 @@
+let mapleader = "\<Space>" 
 
 "ctrl+shift+[arrow keys] can be used to resize splits
-noremap <silent> <c-s-right> :vertical resize +1<cr>
-noremap <silent> <c-s-left> :vertical resize -1<cr>
+noremap <silent> <c-s-left> :vertical resize +1<cr>
+noremap <silent> <c-s-right> :vertical resize -1<cr>
 noremap <silent> <c-s-up> :resize -1<cr>
 noremap <silent> <c-s-down> :resize +1<cr>
 
@@ -34,8 +35,8 @@ inoremap kj <Esc>
 inoremap jk <Esc>
 
 " Easy CAPS
-inoremap <c-u> <ESC>viwUi
-nnoremap <c-u> viwU<Esc>
+"inoremap <c-u> <ESC>viwUi
+"nnoremap <c-u> viwU<Esc>
 
 " Alternate way to save
 nnoremap <C-s> :w<CR>
@@ -59,6 +60,34 @@ nnoremap <C-l> <C-w>l
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 
+" Comment/Uncomment Lines
 map  <C-_> <plug>NERDCommenterToggle
 imap  <C-_> <Esc><plug>NERDCommenterTogglei
 
+" Shortcut to access Ripgrep
+nnoremap <a-f> :Rg<CR>
+
+" List Buffers using fzf
+nnoremap <leader>b :Buffers<CR>
+vnoremap <leader>b :Buffers<CR>
+
+" List Files using fzf
+nnoremap <leader>f :Files<CR>
+vnoremap <leader>f :Files<CR>
+
+" Turn on tracking in Session.vim
+nnoremap <leader>s :Obsession ~/.zzz.vim<CR>
+nnoremap <leader>ss :Obsession<CR>
+
+" Leader+0 to go to end of line
+nnoremap <leader>0 $
+vnoremap <leader>0 $
+
+" Remove search highlights
+map <leader>h :noh<CR>
+
+" Easy move half page
+map <leader>j <C-d>
+map <leader>k <C-u>
+
+map <Leader>ee :ConjureEval<CR>

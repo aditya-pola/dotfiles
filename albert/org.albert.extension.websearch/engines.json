@@ -1,0 +1,20 @@
+[
+    {
+        "iconPath": "/home/pola/.config/albert/org.albert.extension.websearch/{b1da5bde-2b77-4535-9d67-a6fd75600fa2}.",
+        "name": "Google",
+        "trigger": "g ",
+        "url": "https://www.google.com/search?q=%s"
+    },
+    {
+        "iconPath": "/home/pola/.config/albert/org.albert.extension.websearch/{afbd8d9c-536c-48ba-a6ed-e764d548e32d}.",
+        "name": "Youtube",
+        "trigger": "y ",
+        "url": "https://www.youtube.com/results?search_query=%s"
+    },
+    {
+        "iconPath": ":github",
+        "name": "GitHub",
+        "trigger": "gh ",
+        "url": "https://github.com/search?utf8=✓&q=%s"
+    }
+]
